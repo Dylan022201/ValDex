@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Val Dex | Strategies</title>
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="components.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div>
+            <h1 class="header-title">
+                <img src="assets/Logo.png" alt="Logo" class="logo">
+                Basic Strategies
+            </h1>
+            <nav class="header-nav">
+                <div id="btns">
+                    <a v-for="button in buttons" :href="button.url" class="btn">{{ button.text }}</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- A spacer element-->
+    <div class="spacer"></div>
+
+    <section class="centered resetMarPad">
+        <h2>Welcome to Val Dex!</h2>
+        <p class="resetPadding">This website is intended to help individuals learn agents, maps and strategies for
+            rounds on Valorant!</p>
+    </section>
+
+    <!-- A spacer element-->
+    <div class="spacer"></div>
+
+
+    <footer class="footer">
+        <p>&copy; 2024 Val Dex. All rights reserved.</p>
+    </footer>
+
+
+    <!-- vue.js script -->
+    <script src="app.js"></script>
+
+</body>
+
+</html>

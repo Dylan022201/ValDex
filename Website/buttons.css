@@ -1,0 +1,27 @@
+/* Button */
+.btn {
+    background-color: #4a4e56;
+    /* Dark gray button background color */
+    color: #fff;
+    /* White text */
+    padding: 8px 16px;
+    /* Padding top and bottom */
+    border-radius: 4px;
+    /* Rounded corners */
+    text-decoration: none;
+    /* Remove underline */
+    margin-right: 5px;
+}
+
+.btn:hover {
+    background-color: #373b42;
+    /* Darker background color on hover */
+}
+
+
+.clickable-box {
+    width: 100%;
+    padding: 20px; /* Optional padding for the content inside the box */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    cursor: pointer; /* Change cursor to pointer to indicate clickability */
+}

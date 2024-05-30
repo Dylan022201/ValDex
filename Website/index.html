@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Val Dex | Home</title>
+
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="components.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div>
+            <h1 class="header-title">
+                <img src="assets/Logo.png" alt="Logo" class="logo">
+                Home
+            </h1>
+            <nav class="header-nav">
+                <div id="btns">
+                    <a v-for="button in buttons" :href="button.url" class="btn">{{ button.text }}</a>
+                </div>
+        </div>
+
+        
+    </header>
+
+    <!-- A spacer element-->
+    <div class="spacer"></div>
+
+    <div id="app" class="shadow-border margin-shadow-border">
+        <section class="centered resetMarPad">
+
+            <!-- A spacer element-->
+            <div class="spacer"></div>
+
+            <h2>Welcome to Val Dex!</h2>
+            <!-- A spacer element-->
+            <div class="spacer"></div>
+            <p>{{ welcomeMessage }}</p>
+        </section>
+
+        <!-- A spacer element-->
+        <div class="spacer"></div>
+
+        <section class="centered resetMarPad">
+            <h2 class="small_spacer">Agents</h2>
+            <p class="small_spacer">{{ agentsMessage }}</p>
+            <img src="assets/Agents.jpg" alt="Agents" class="photo small_spacer image-shadow">
+        </section>
+
+        <section class="centered resetMarPad">
+            <h2 class="small_spacer">Maps</h2>
+            <p class="small_spacer">{{ mapsMessage }}</p>
+            <img src="assets/Maps.jpg" alt="Maps" class="photo small_spacer">
+        </section>
+
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Val Dex. All rights reserved.</p>
+    </footer>
+
+
+    <!-- vue.js script -->
+    <script src="app.js"></script>
+
+
+</body>
+
+</html>

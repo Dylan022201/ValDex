@@ -1,0 +1,200 @@
+/* Resetting default margin and padding */
+body,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    width: 100%;
+    padding: 0 12%; /* Adjust this value to leave 12% of free space on each side */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.character-card p {
+    max-width: calc(100% - 36%); /* Adjust this value to your desired maximum line length */
+    margin: 0 auto;
+    overflow-wrap: break-word; /* Ensure words break onto the next line if they exceed the max width */
+}
+
+/* universal classes for resetting padding or margin or both */
+
+/* default margin and padding for a section */
+.resetMarPad {
+    padding: 10px;
+    margin: 10px;
+}
+
+/* default padding for a section */
+.resetPadding {
+    padding: 10px;
+}
+
+/* default margin for a section */
+.resetMargin {
+    margin: 10px;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #282c35;
+    /* Dark gray background */
+    color: #ddd;
+    /* Light gray text */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Shadow for body */
+    min-height: calc(100vh - 60px);
+    /* 100% viewport height minus height of the footer */
+}
+
+/* Header */
+header {
+    background-color: #1f2229;
+    /* Darker gray background */
+    color: #fff;
+    /* White text */
+    padding: 10px 0;
+    /* Padding top and bottom */
+    border-bottom: 2px solid #fff;
+    /* White border at bottom */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Shadow for header */
+    display: grid;
+    grid-template-rows: auto 1fr;
+    /* Set the header to use CSS Grid */
+}
+
+.header-container {
+    max-width: 960px;
+    /* Maximum width for content */
+    margin: 0 auto;
+    /* Center content horizontally */
+    padding: 0 20px;
+    /* Padding left and right */
+    display: flex;
+    justify-content: space-between;
+    /* Space between items */
+    align-items: center;
+    /* Center items vertically */
+}
+
+h1 {
+    margin: 0;
+    /* Remove margin */
+}
+
+/* Navigation */
+nav a {
+    color: #fff;
+    /* White text */
+    text-decoration: none;
+    /* Remove underline */
+    margin-left: 0px;
+    /* Add space between links */
+}
+
+nav a:first-child {
+    margin-left: 0px;
+    /* No margin for first link */
+}
+
+/* Centered content */
+.centered {
+    text-align: center;
+    /* Center-align text */
+}
+
+/* Header title */
+.header-title {
+    margin: 0;
+    margin-bottom: 10px; /* Space below header title */
+}
+
+/* Header navigation */
+.header-nav {
+    margin-top: 10px;
+    /* Space above navigation */
+}
+
+/* Footer */
+.footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #1f2229;
+    /* Darker gray background */
+    color: #fff;
+    /* White text */
+    padding-top:40px;
+    /* Padding */
+    text-align: center;
+    /* Center-align text */
+}
+
+/* Logo */
+.logo {
+    float: left; /* Float the logo to the left */
+    margin-left: 10px;
+    margin-right: 20px;
+    height: auto; /* Allow the height to adjust automatically */
+    max-height: 70px; /* Set a maximum height for the logo */
+    width: auto; /* Allow the width to adjust automatically */
+}
+
+.photo {
+    max-width: 75%; /* Set maximum width of the photo */
+    max-height: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+
+/* for adding larger space anywhere on the page */
+.spacer {
+    margin-bottom: 50px;
+}
+
+/* to add some space between the nav bar and the end of the header */
+.header-spacer{
+    margin-bottom: 15px;
+}
+
+.small_spacer{
+    margin-bottom: 20px;
+}
+
+
+.shadow-border {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    /* Adjust the values as needed */
+    border: 1px solid #fff;
+    border-radius: 5px;
+    /* Optional: Add border radius for rounded corners */
+}
+
+.margin-shadow-border{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+
+.centered-table {
+    display: flex;
+    justify-content: center;
+}
+
+.centered-table table {
+    border-spacing: 40px; /* Adjust the value as needed */
+}
+
+.td-width{
+    max-width: 50%;
+}
+
+.shadows{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
